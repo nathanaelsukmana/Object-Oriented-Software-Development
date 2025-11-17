@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="29.0.3">
+  <diagram id="dm7YwDP6ckr1v_kSiV5E" name="Page-1">
+    <mxGraphModel dx="2427" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AccountAlreadyExistsException&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ AccountAlreadyExistsException(String): &lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="1630" y="82" width="296" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="node5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AccountDoesNotExistException&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ AccountDoesNotExistException(String): &lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="1648" y="500" width="296" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="node9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;Bank&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ createAccount(String): void&lt;br/&gt;+ getAccountBalance(String): double&lt;br/&gt;+ getTransactionsByType(String, boolean): List&amp;lt;Transaction&amp;gt;&lt;br/&gt;+ removeTransaction(String, Transaction): void&lt;br/&gt;+ containsTransaction(String, Transaction): boolean&lt;br/&gt;+ createAccount(String, List&amp;lt;Transaction&amp;gt;): void&lt;br/&gt;+ addTransaction(String, Transaction): void&lt;br/&gt;+ getTransactionsSorted(String, boolean): List&amp;lt;Transaction&amp;gt;&lt;br/&gt;+ getTransactions(String): List&amp;lt;Transaction&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-380" y="-100" width="415" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="node7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;CalculateBill&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ calculate(): double&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="705" y="580" width="161" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="node13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;IncomingTransfer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;attributes&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ calculate(): double&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; line-height: 1.6;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;operations&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; line-height: 1.6;&quot;&gt;+ IncomingTransfer(String, double, String, String, String):&amp;nbsp;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="388" y="1309" width="387" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="node0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Main&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Main(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ main(String[]): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="1652.5" y="770" width="166" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="node3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;OutgoingTransfer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ calculate(): double&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; line-height: 1.6;&quot;&gt;+ OutgoingTransfer(String, double, String, String, String):&amp;nbsp;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="1112" y="1224" width="387" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="node1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Payment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;attributes&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- incomingInterest: double&lt;br&gt;- outgoingInterest: double&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;operations&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Payment(String, double, String):&amp;nbsp;&lt;br&gt;+ Payment(Payment):&amp;nbsp;&lt;br&gt;+ Payment(String, double, String, double, double):&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ equals(Object): boolean&lt;br&gt;+ toString(): String&lt;br&gt;+ calculate(): double&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="705" y="880" width="344" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="node6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PrivateBank&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; line-height: 1.6;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;i&gt;attributes&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; line-height: 1.6;&quot;&gt;- incomingInterest: double&lt;br&gt;- name: String&lt;br&gt;- outgoingInterest: double&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;hr size=&quot;1&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;i&gt;operations&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;+ PrivateBank(String, double, double):&amp;nbsp;&lt;br&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ PrivateBank(PrivateBank):&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getTransactionsSorted(String, boolean): List&amp;lt;Transaction&amp;gt;&lt;br&gt;+ getTransactions(String): List&amp;lt;Transaction&amp;gt;&lt;br&gt;+ equals(Object): boolean&lt;br&gt;+ getAccountBalance(String): double&lt;br&gt;+ createAccount(String, List&amp;lt;Transaction&amp;gt;): void&lt;br&gt;+ addTransaction(String, Transaction): void&lt;br&gt;+ createAccount(String): void&lt;br&gt;+ removeTransaction(String, Transaction): void&lt;br&gt;+ containsTransaction(String, Transaction): boolean&lt;br&gt;+ getTransactionsByType(String, boolean): List&amp;lt;Transaction&amp;gt;&lt;br&gt;+ toString(): String&lt;/p&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="150" width="415" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="node8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PrivateBankAlt&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px; line-height: 1.6;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;i&gt;attributes&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- outgoingInterest: double&lt;br&gt;- name: String&lt;br&gt;- incomingInterest: double&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;operations&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ PrivateBankAlt(String, double, double):&amp;nbsp;&lt;br&gt;+ PrivateBankAlt(PrivateBankAlt):&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getAccountBalance(String): double&lt;br&gt;+ getTransactionsSorted(String, boolean): List&amp;lt;Transaction&amp;gt;&lt;br&gt;+ getTransactionsByType(String, boolean): List&amp;lt;Transaction&amp;gt;&lt;br&gt;+ removeTransaction(String, Transaction): void&lt;br&gt;+ createAccount(String): void&lt;br&gt;+ containsTransaction(String, Transaction): boolean&lt;br&gt;+ getTransactions(String): List&amp;lt;Transaction&amp;gt;&lt;br&gt;+ toString(): String&lt;br&gt;+ equals(Object): boolean&lt;br&gt;+ addTransaction(String, Transaction): void&lt;br&gt;+ createAccount(String, List&amp;lt;Transaction&amp;gt;): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="835" y="60" width="415" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="node10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Transaction&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;attributes&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;# date: String&lt;br&gt;# amount: double&lt;br&gt;# description: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;operations&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Transaction(String, double, String):&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ equals(Object): boolean&lt;br&gt;+ calculate(): double&lt;br&gt;+ toString(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="379" y="924" width="265" height="256" as="geometry" />
+        </mxCell>
+        <mxCell id="node12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TransactionAlreadyExistException&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ TransactionAlreadyExistException(String): &lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="1648" y="370" width="315" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="node14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TransactionAttributeException&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ TransactionAttributeException(String): &lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="1652.5" y="650" width="287" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="node2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TransactionDoesNotExistException&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ TransactionDoesNotExistException(String): &lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="1640" y="220" width="323" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="node4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Transfer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;attributes&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- sender: String&lt;br&gt;- recipient: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;i style=&quot;white-space: pre;&quot;&gt;operations&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Transfer(String, double, String, String, String):&amp;nbsp;&lt;br&gt;+ Transfer(String, double, String):&amp;nbsp;&lt;br&gt;+ Transfer(Transfer):&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ equals(Object): boolean&lt;br&gt;+ calculate(): double&lt;br&gt;+ toString(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-20" y="990" width="331" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.000;exitY=0.500;exitDx=0;exitDy=0;endFill=0;entryX=1;entryY=0.482;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="node13" target="node4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="388" y="1353" />
+              <mxPoint x="345" y="1353" />
+              <mxPoint x="345" y="1152" />
+              <mxPoint x="350" y="1152" />
+              <mxPoint x="350" y="1130" />
+            </Array>
+            <mxPoint x="330" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.000;exitY=0.500;exitDx=0;exitDy=0;entryX=1.000;entryY=0.500;entryDx=0;entryDy=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="1284" />
+              <mxPoint x="343" y="1284" />
+              <mxPoint x="343" y="1167" />
+              <mxPoint x="330" y="1167" />
+              <mxPoint x="330" y="1150" />
+            </Array>
+            <mxPoint x="1110" y="1292.0000000000005" as="sourcePoint" />
+            <mxPoint x="309" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.000;exitY=0.500;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;endFill=0;" parent="1" source="node1" target="node10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="661" y="1022" />
+              <mxPoint x="661" y="894" />
+              <mxPoint x="511" y="894" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;entryX=0.7;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="node9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="360" />
+              <mxPoint x="-100" y="360" />
+              <mxPoint x="-100" y="158" />
+            </Array>
+            <mxPoint x="130" y="370" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.000;exitY=0.751;exitDx=0;exitDy=0;entryX=0.99;entryY=0.42;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="node8" target="node9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="383" />
+              <mxPoint x="670" y="10" />
+              <mxPoint x="40" y="10" />
+              <mxPoint x="40" y="7" />
+            </Array>
+            <mxPoint x="40" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=1.000;exitY=0.291;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;" parent="1" source="node10" target="node7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="644" y="740" />
+              <mxPoint x="785" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge0" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;endFill=0;" parent="1" source="node4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="146" y="894" />
+              <mxPoint x="490" y="894" />
+              <mxPoint x="490" y="830" />
+              <mxPoint x="489" y="830" />
+            </Array>
+            <mxPoint x="489" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i9rxYmlm1W2PcizobO_--1" value="Strukturdiagramm -&amp;gt; Klassendiagramm" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-530" y="-460" width="320" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
